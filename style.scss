@@ -283,12 +283,13 @@ body {
 
     .single_dish {
         width: 29.33%;
-        margin:3rem 3rem 0 0;
-        
-        @include respond(phone){
+        margin: 3rem 3rem 0 0;
+
+        @include respond(phone) {
             width: 100%;
-            margin:3rem 0 0 0;
+            margin: 3rem 0 0 0;
         }
+
         &-image {
             width: 100%;
         }
@@ -298,6 +299,7 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             .single_dish-description {
                 font-size: 1.6rem;
             }
@@ -308,6 +310,124 @@ body {
 .bag_icon {
     width: 4rem;
     height: 4rem;
+}
+
+// single item
+.show_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.show_dish {
+    &-image {
+        height: 70vh;
+        width: 100%;
+    }
+}
+
+.show_description {
+    padding: 2rem;
+
+    &-divison1 {
+        // background: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .show_description-detail {
+            font-size: 2rem;
+            margin-right: 2rem;
+            // .show_name{
+
+            // }
+            .show_price {
+                margin-top: 1rem;
+            }
+        }
+
+        .incdec {
+            align-self: flex-start;
+            display: flex;
+
+            .inc {
+                width: 33.33%;
+                height: 4rem;
+                border:none;
+                outline: none;
+                background: $secondary_color;
+                border-top-left-radius: .5rem;
+                border-bottom-left-radius: .5rem;
+                
+
+            }
+
+            .board {
+                text-align: center;
+                width: 33.33%;
+                height: 4rem;
+                border:none;
+                outline: none;
+                background: $secondary_color;
+                color: white;
+                font-size: 2rem;
+
+            }
+
+            .dec {
+                width: 33.33%;
+                height: 4rem;
+                border:none;
+                outline: none;
+                background: $secondary_color;
+                border-top-right-radius: .5rem;
+                border-bottom-right-radius: .5rem;
+
+            }
+            .inc_icon,
+            .dec_icon{
+                width: 3rem;
+                vertical-align: middle;
+            }
+        }
+    }
+    &-divison2{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $light_text_color;
+
+        .show_category{
+            font-size: 2rem;
+        }
+        .show_review-details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .star_icon{
+                width: 3rem;
+                margin-right: 1rem;
+            }
+            .reviews_ratings-count{
+                font-size: 2rem;
+
+            }
+        }
+        
+    }
+    &-divison3{
+        margin-top: 2rem;
+        .detail_heading{
+            font-size: 2rem;
+
+        }
+        .detail_para{
+            font-size: 2rem;
+            color: $light_text_color;
+            margin-top: 1rem;
+        }
+    }
 }
 
 ::-webkit-scrollbar {
